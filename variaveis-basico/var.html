@@ -1,0 +1,23 @@
+<html>
+<script>
+    /* var é uma palavra-chave em JavaScript usada para declarar 
+    uma variável globalmente ou localmente, independentemente do escopo.*/
+
+    // Declarando e inicializando uma variável globalmente
+    var x = 10; // escopo global
+    console.log("x", x);
+
+    // Acessando a variável global em um escopo local
+    {
+        console.log("x", x);
+        // Podemos alterar o valor da variável dentro deste escopo
+        x = 20;
+        // Também podemos declarar uma nova variável no escopo local
+        var y = 30;
+    }
+
+    console.log("x", x);
+    // A variável declarada com var no escopo local é acessível globalmente
+    console.log("y", y);
+</script>
+</html>

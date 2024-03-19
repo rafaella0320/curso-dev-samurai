@@ -1,0 +1,24 @@
+<html>
+<script>
+    /* A palavra-chave 'const' é usada em JavaScript para declarar constantes, 
+    que são variáveis com um valor que não pode ser alterado após a atribuição inicial. */
+
+    // Não é possível declarar uma constante sem atribuir um valor
+    // const x; // Isso resultará em um erro
+
+    const x = 10; // escopo global
+    console.log("x", x);
+
+    // x = 20; // Isso resultará em um erro, pois não é possível alterar o valor de uma constante
+
+    // Acessando a constante 'x' no escopo local
+    {
+        console.log("x", x);
+        const y = 30; // Declarando uma nova constante 'y' no escopo local
+    }
+
+    console.log("x", x); // Saída: x 10
+    // console.log("y", y); // Isso resultará em um erro, pois 'y' não está definido neste escopo
+</script>
+
+</html>

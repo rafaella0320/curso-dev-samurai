@@ -1,0 +1,22 @@
+<html>
+<script>
+    /* A palavra-chave 'let' é usada em JavaScript para declarar variáveis ​​localmente, 
+    limitando-as ao escopo do bloco em que são definidas. */
+
+    // Declarando e inicializando uma variável usando 'let' no escopo global
+    let x = 10; // escopo global
+    console.log("x", x);
+
+    // Acessando a variável 'x' no escopo local
+    {
+        console.log("x", x);
+        x = 20; // Podemos acessar e modificar a variável 'x' definida fora deste escopo
+        let y = 30; // Declarando uma nova variável 'y' no escopo local
+    }
+
+    console.log("x", x); // (com valor modificado dentro do escopo local)
+    /* Tentar acessar a variável 'y' aqui resultará em um erro, 
+    pois 'y' foi definida apenas no escopo local */
+    console.log("y", y); // Irá gerar um erro, pois 'y' não está definido neste escopo
+</script>
+</html>
