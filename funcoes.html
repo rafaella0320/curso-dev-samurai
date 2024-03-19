@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+
+<body>
+    <script>
+        // Vamos definir uma função chamada 'soma' que aceita dois parâmetros 'a' e 'b' e retorna a soma deles.
+        function soma(a, b) {
+            // Aqui estamos usando uma função simples para somar dois números.
+            // 'return' é usado para retornar um valor da função. 
+            /* Quando a função encontra 'return', ela sai da função imediatamente 
+            e o valor especificado é retornado. */
+            // Neste caso, a função retorna a soma de 'a' e 'b'.
+            return a + b;
+        }
+
+        // Pedindo para inserir dois números e convertendo o tipo
+        var n1 = Number(prompt("Digite o primeiro número:"));
+        var n2 = Number(prompt("Digite o segundo número:"));
+
+        // Agora chamar a função com as variáveis do prompt, armazenando na variável
+        var resultado = soma(n1, n2);
+
+        // Exibir resultado com alert
+        alert("O resultado da soma é: " + resultado);
+    </script>
+</body>
+
+</html>

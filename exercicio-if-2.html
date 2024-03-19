@@ -1,0 +1,25 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<script>
+    let idioma = prompt("Por favor, digite o código do IDIOMA desejado")
+    let variacao = prompt("Por favor, digite a variação")
+
+    // pt-br e pt-pt = Olá
+    // en-us = Hi
+    // en-gb = Hello
+
+    if((idioma == "pt") && (variacao == "br" || variacao == "pt")){
+        alert("Olá")
+    }
+    else if ((idioma == "en") && (variacao == "us")){
+        alert("Hi")
+    }
+    else if((idioma == "en") && (variacao == "gb")){
+        alert("Hello")
+    }
+    else{
+        alert("Idioma e/ou variação não reconhecido(s).")
+    }
+</script>
+
+</html>
