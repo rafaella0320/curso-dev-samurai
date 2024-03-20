@@ -1,0 +1,22 @@
+<html>
+<script>
+    let name = "Rafaella"
+    let age = 20
+
+    // Declaração de um objeto de endereço
+    let address = {
+        street: "Rua Central",
+        city: "Ruanópolis",
+    }
+
+    // Concatenação (Antiga)
+    // O js não consegue mostrar objetos na concatenação
+    // Utilizando a função JSON.stringify, é possível exibir o objeto
+    console.log(name + " tem " + age + " anos e reside em: " + JSON.stringify(address))
+
+    // Interpolação
+    console.log(`${name} tem ${age} anos e reside em ${JSON.stringify(address)}.`)
+    // Fazendo uma expressão
+    console.log(`${name} tem ${age + 1} anos.`)
+</script>
+</html>

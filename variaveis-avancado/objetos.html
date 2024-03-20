@@ -1,0 +1,29 @@
+<html>
+<script>
+    // Declarando objeto
+    const person = {
+        name: "Rafa",
+        age: 20,
+        address: {
+            street: "Av. Central",
+            city: "Rio de Janeiro",
+        },
+    }
+
+    // Mesmo sendo uma constante, é possível alterar propriedades do objeto ou de array
+    person.name = "Gabi"
+
+    // Adicionar propriedades também
+    person.hairColor = "Black"
+
+    console.log(person)
+    console.log(person.name)
+    console.log(person.age)
+
+    // Exibir informações, fazendo interpolação
+    console.log(
+        `${person.name} tem ${person.age} anos e reside na cidade de ${person.address.city}.`
+    )
+</script>
+
+</html>

@@ -1,0 +1,40 @@
+<html>
+<script>
+    // Data e hora atual do computador
+    // new Date()
+    // inicializa com valores pré-definidos.
+    // new Date(year, month, day, hours, minutes, seconds, milliseconds)
+    // a partir de uma string
+    // new Date(dateString)
+
+    // Principais métodos -> get e set
+    /*
+    `getDay()` e`setDay()` - Retorna / define o dia da semana(0 - 6).
+    `getDate()` e`setDate()` - Retorna / define o dia do mês(1 - 31).
+    `getMonth()` e`setMonth()` - Retorna / define o mês(0 - 11).
+    `getFullYear()` e`setFullYear()` - Retorna / define o ano.
+    `getHours()` e`setHours()` - Retorna / define a hora(0 - 23).
+    `getMinutes()` e`setMinutes()` - Retorna / define os minutos(0 - 59).
+    `getSeconds()` e`setSeconds()` - Retorna / define os segundos(0 - 59).
+    `parse()` - Recupera uma data a partir de uma string.
+    `toString()` - Retorna uma data como string.
+    `toISOString()` - Retorna uma data como string no padrão ISO.
+    `toTimeString()` - Retorna a hora apenas.
+    */
+
+    //const bornDate = new Date()
+    //const bornDate = new Date(2003, 8, 27, 22, 53)
+    //const bornDate = new Date("Sep 27 2003 22:53:00")
+    const bornDate = new Date("2003-09-27T22:53:00.000Z")
+    const today = new Date()
+
+    console.log(bornDate)
+    console.log(bornDate.toISOString())
+
+    console.log("dia", bornDate.getDate())
+    console.log("dia", bornDate.getMonth() + 1) // Somando +1 pois o mês começa do 0 (Janeiro)
+    console.log("dia", bornDate.getFullYear())
+    console.log("idade", today.getFullYear() - bornDate.getFullYear()) // Calculando a idade (anos)
+</script>
+
+</html>
