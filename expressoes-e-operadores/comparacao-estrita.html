@@ -1,0 +1,23 @@
+<html>
+<script>
+    /* 
+    O JavaScript tenta converter dados automaticamente durante a comparação, 
+    o que pode causar resultados inesperados ao usar o operador de igualdade (==). 
+    */
+    console.log("1" == 1) // true (JavaScript converte "1" para 1 antes de comparar)
+    console.log(1 == true) // true (JavaScript converte true para 1 antes de comparar)
+    console.log(null == undefined) // true (ambos são tratados como valores falsos e são iguais)
+
+    /* 
+    - Para solucionar este problema utilizamos a comparação estrita (idêntico).
+    - Compara considerando o tipo de dado.
+    - O ideal é utilizar o operador estrito (===) para comparações seguras. 
+    */
+
+    console.log("1" === 1) // false (string não é igual a número)
+    console.log(1 === true) // false (número não é igual a booleano)
+    console.log(null === undefined) // false (null não é igual a undefined)
+    console.log(null !== undefined) /* true (o operador !== nega a comparação, 
+                                então null não é estritamente igual a undefined)*/
+</script>
+</html>
