@@ -1,0 +1,30 @@
+<html>
+<script>
+    /* Este script demonstra o uso de try-catch 
+    para lidar com erros durante a execução de código. */
+
+    try {
+        // Bloco de código onde podem ocorrer erros
+        console.log("Consultando o banco de dados..."); // Mensagem indicando uma operação em andamento
+
+        // Simulação de uma operação que pode falhar (por exemplo, uma consulta a um banco de dados)
+        // con.select("cliente"); // Este seria um ponto de falha, comentado para simulação
+
+        // Lança um erro simulado para testar o bloco catch
+        throw "Erro 1032 ao conectar com o banco de dados."; // Simula um erro durante a execução
+
+        // Se houver mais comandos a serem executados após a possível falha, devem ser colocados aqui
+        // console.log("Outro comando.");
+    } catch (error) {
+        // Bloco que lida com erros
+        // Mostra uma mensagem amigável para o usuário informando sobre o erro
+        alert("Ocorreu um erro durante a execução. Por favor, entre em contato com o suporte.");
+
+        // Registra o erro no console para fins de depuração
+        console.error(error); // Exibe a causa do erro no console do navegador
+    } finally {
+        // Bloco opcional que sempre é executado, independentemente de ocorrer um erro ou não
+        console.log("Execução final"); // Exibe uma mensagem indicando o final da execução, seja com sucesso ou com erro
+    }
+</script>
+</html>
