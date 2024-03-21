@@ -1,0 +1,20 @@
+<html>
+<meta charset="UTF-8" />
+<script>
+    // O loop for...in é uma estrutura utilizada para iterar sobre as propriedades enumeráveis de um objeto.
+    // Ele percorre cada propriedade do objeto, atribuindo o nome da propriedade à variável especificada.
+
+    const person = {
+        name: "Rafaella",
+        age: 20,
+        city: "Rio de Janeiro",
+    };
+
+    // Neste caso, 'prop' recebe o nome de cada propriedade do objeto 'person' em cada iteração.
+    // Para acessar o valor de cada propriedade, utilizamos person[prop].
+    for (const prop in person) {
+        console.log(`Propriedade: ${prop} - Valor: ${person[prop]}`);
+    }
+</script>
+
+</html>
