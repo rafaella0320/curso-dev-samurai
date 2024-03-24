@@ -1,0 +1,27 @@
+<html>
+<meta charset="UTF-8" />
+<script>
+    // O valor original da variável 'numVal' não é afetado fora do escopo da função.
+    function mult(n) {
+        n *= n
+        return n
+    }
+
+    let numVal = 10
+    console.log(mult(numVal))
+
+    console.log(numVal)
+
+    // O valor original da propriedade 'value' do objeto 'numObj' é afetado fora do escopo da função.
+    function multObj(obj) {
+        obj.value *= obj.value
+        return obj
+    }
+
+    const numObj = { value: 10 }
+    console.log(multObj(numObj))
+
+    console.log(numObj)
+</script>
+
+</html>

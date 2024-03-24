@@ -1,0 +1,22 @@
+<html>
+<meta charset="UTF-8" />
+<script>
+    function sum() {
+        let res = 0;
+
+        // O objeto 'arguments' é semelhante a um array e contém todos os argumentos passados para a função
+        for (const n of arguments) {
+            res += n;
+        }
+
+        return res;
+    }
+
+    // Chamando a função sum sem argumentos
+    console.log(sum());
+
+    // Chamando a função sum com vários argumentos
+    console.log(sum(1, 1, 3, 10, 4, 1, 3, 4));  
+</script>
+
+</html>
