@@ -1,0 +1,18 @@
+<html>
+<meta charset="UTF-8" />
+<script>
+    let value = 1234.59
+
+    console.log(value.toFixed(2)) // Duas casas decimais
+    console.log(Math.ceil(value)) // Arredonda para cima
+    console.log(Math.floor(value)) // Arredonda para baixo
+    console.log(Math.round(value)) // Parecido com floor
+    console.log(
+        new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL",
+        }).format(value)
+    )
+
+</script>
+</html>

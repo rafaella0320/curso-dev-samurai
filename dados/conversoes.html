@@ -1,0 +1,42 @@
+<html>
+<meta charset="UTF-8" />
+<script>
+    // String para Number
+    console.log(Number("1"))
+    console.log(Number("a")) // NaN
+
+    // Number para String
+    console.log(String(2))
+
+    // String para Boolean
+    console.log(Boolean("")) // false
+    console.log(Boolean("abc")) // true
+
+    // Boolean para Number
+    console.log(Number(true)) // 1
+    console.log(Number(false)) // 0
+
+    // Boolean para String
+    console.log(String(true))
+    console.log(String(false))
+
+    // String para Date
+    console.log(new Date("03/24/2022"))
+    console.log(new Date("2024-03-24"))
+    console.log(new Date("2022 03 24"))
+
+    // Date para String
+    console.log(new Date().toString())
+    console.log(new Date().toISOString())
+
+    // String para Array
+    let name = "Rafaella Moreira"
+    console.log(name.split(" "))
+
+    // Array para String
+    let values = ["R", "A", "F", "A", "E", "L", "L", "A"]
+    console.log(values.join("-"))
+
+</script>
+
+</html>
